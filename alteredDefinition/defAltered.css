@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.def-Tag {
+    border: 3px solid black;
+    padding: 10px;
+}
+
+#ipa {
+    color: #707579;
+    font-size: 25px;
+}
+
+.description {
+    font-size:25px ;
+}
+
+ul {
+    font-size: 20px;
+}
