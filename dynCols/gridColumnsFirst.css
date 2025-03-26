@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    margin: 5rem auto;
+    grid-template-columns: 45% 45%;         /* 45% since we did col-gap of 10% */
+    padding: 10px;
+    text-align: center;
+    column-gap: 10%;
+}
+
+.col {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+    .col {
+        background-color: yellow;
+    }
+}
+@media only screen and (min-width: 481px) {
+    .col {
+        background-color: aqua;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .col {
+        background-color: red;
+    }
+}
