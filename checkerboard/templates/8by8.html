@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8X8</title>
+    <style>
+        .board {
+            margin: 0px auto;
+        }
+        .square0, .square1 {
+            height: 80px;
+            width: 80px;
+        }
+        .square0 {
+            background-color: gray;
+        }
+        .square1 {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <table class="board">
+        {% for i in range (0,8) %}
+        <tr>
+            {% for j in range (0,8) %}
+            <td class="square{{ (i + j) % 2}}"></td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
